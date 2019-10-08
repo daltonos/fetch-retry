@@ -15,5 +15,5 @@ const fetchWithRetry = (req, maxRetries) => {
 
 
 fetchWithRetry(req, 3)
-    .then(() => console.log(response, "Request has been successful"))
-    .catch(() => { console.log(err, "All retries failed"); });
+    .then((response) => console.log(response, "Request has been successful"))
+    .catch((err) => { console.log(err, "All retries failed"); });
