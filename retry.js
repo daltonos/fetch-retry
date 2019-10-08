@@ -9,7 +9,7 @@ const fetchWithRetry = (req, maxRetries) => {
                 });
         });
     } else {
-        Promise.reject("tryFailed");
+        return Promise.reject("tryFailed");
     }
 };
 
